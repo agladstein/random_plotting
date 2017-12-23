@@ -5,36 +5,42 @@
 #    pip-compile --output-file requirements.txt requirements.in
 #
 appnope==0.1.0            # via ipython
-bleach==2.1.1             # via nbconvert
+backports-abc==0.5        # via tornado
+backports.functools-lru-cache==1.4  # via matplotlib
+backports.shutil-get-terminal-size==1.0.0  # via ipython
+bleach==2.1.2             # via nbconvert
 brewer2mpl==1.4.1         # via ggplot
+certifi==2017.11.5        # via tornado
+configparser==3.5.0       # via entrypoints
 cycler==0.10.0            # via ggplot, matplotlib
 decorator==4.1.2          # via ipython, traitlets
 entrypoints==0.2.3        # via nbconvert
+enum34==1.1.6             # via traitlets
+functools32==3.2.3.post2  # via jsonschema
 ggplot==0.11.5
-html5lib==1.0b10          # via bleach
-ipykernel==4.6.1          # via ipywidgets, jupyter, jupyter-console, notebook, qtconsole
+html5lib==1.0.1           # via bleach
+ipykernel==4.7.0          # via ipywidgets, jupyter, jupyter-console, notebook, qtconsole
 ipython-genutils==0.2.0   # via nbformat, notebook, qtconsole, traitlets
-ipython==6.2.1            # via ipykernel, ipywidgets, jupyter-console
+ipython==5.5.0            # via ipykernel, ipywidgets, jupyter-console
 ipywidgets==7.0.5         # via jupyter
-jedi==0.11.0              # via ipython
 jinja2==2.10              # via nbconvert, notebook
 jsonschema==2.6.0         # via nbformat
-jupyter-client==5.1.0     # via ipykernel, jupyter-console, notebook, qtconsole
+jupyter-client==5.2.0     # via ipykernel, jupyter-console, notebook, qtconsole
 jupyter-console==5.2.0    # via jupyter
 jupyter-core==4.4.0       # via jupyter-client, nbconvert, nbformat, notebook, qtconsole
 jupyter==1.0.0
 markupsafe==1.0           # via jinja2
-matplotlib==2.1.0
-mistune==0.8.1            # via nbconvert
+matplotlib==2.1.1
+mistune==0.8.3            # via nbconvert
 nbconvert==5.3.1          # via jupyter, notebook
 nbformat==4.4.0           # via ipywidgets, nbconvert, notebook
 notebook==5.2.2           # via jupyter, widgetsnbextension
-numpy==1.13.3             # via ggplot, matplotlib, pandas, patsy, scipy
-pandas==0.21.0
+numpy==1.13.3
+pandas==0.21.1
 pandocfilters==1.4.2      # via nbconvert
-parso==0.1.0              # via jedi
+pathlib2==2.3.0           # via ipython, pickleshare
 patsy==0.4.1              # via ggplot, statsmodels
-pexpect==4.3.0            # via ipython
+pexpect==4.3.1            # via ipython
 pickleshare==0.7.4        # via ipython
 prompt-toolkit==1.0.15    # via ipython, jupyter-console
 ptyprocess==0.5.2         # via pexpect, terminado
@@ -44,10 +50,13 @@ python-dateutil==2.6.1    # via jupyter-client, matplotlib, pandas
 pytz==2017.3              # via matplotlib, pandas
 pyzmq==16.0.3             # via jupyter-client
 qtconsole==4.3.1          # via jupyter
+scandir==1.6              # via pathlib2
 scipy==1.0.0              # via ggplot, statsmodels
 simplegeneric==0.8.1      # via ipython
-six==1.11.0               # via bleach, cycler, ggplot, html5lib, matplotlib, patsy, prompt-toolkit, python-dateutil, traitlets
+singledispatch==3.4.0.3   # via tornado
+six==1.11.0               # via bleach, cycler, ggplot, html5lib, matplotlib, pathlib2, patsy, prompt-toolkit, python-dateutil, singledispatch, traitlets
 statsmodels==0.8.0        # via ggplot
+subprocess32==3.2.7       # via matplotlib
 terminado==0.8.1          # via notebook
 testpath==0.3.1           # via nbconvert
 tornado==4.5.2            # via ipykernel, notebook, terminado
